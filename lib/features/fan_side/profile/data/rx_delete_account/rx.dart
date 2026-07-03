@@ -1,0 +1,46 @@
+import 'dart:developer';
+import 'package:dio/dio.dart';
+import 'package:rxdart/rxdart.dart';
+import '../../../../../common_widgets/custom_toast.dart';
+import '../../../../../constants/app_constants.dart';
+import '../../../../../networks/rx_base.dart';
+import 'api.dart';
+
+final class DeleteAccountRx extends RxResponseInt {
+  final api = DeleteAccountApi.instance;
+
+  String message = kErrorGeneric;
+
+  DeleteAccountRx({required super.empty, required super.dataFetcher});
+
+  ValueStream get filleData => dataFetcher.stream;
+
+  Future<bool> deleteAccount() async {
+    try {
+      Map resdata = await api.deleteAccount();
+      return await handleSuccessWithReturn(resdata);
+    } catch (error) {
+      return await handleErrorWithReturn(error);
+    }
+  }
+
+  @override
+  handleSuccessWithReturn(data) async {
+    dataFetcher.sink.add(data);
+    return true;
+  }
+
+  @override
+  handleErrorWithReturn(error) {
+    String message = kErrorGeneric;
+    log(error.toString());
+    if (error is DioException) {
+      message = error.response?.data["message"].toString() ?? kErrorGeneric;
+      if (error.type == DioExceptionType.connectionError) {
+        message = kErrorNoConnection;
+      }
+    }
+    customToastMessage('Error', message);
+    return false;
+  }
+}

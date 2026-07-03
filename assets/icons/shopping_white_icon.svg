@@ -1,0 +1,12 @@
+<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.000000" height="20.000000" fill="none" customFrame="#000000">
+	<rect id="shopping-cart" width="20.000000" height="20.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="vuesax/linear/shopping-cart">
+		<g id="Group">
+			<path id="Vector" d="M1.66699 1.66797L3.117 1.66797C4.017 1.66797 4.72533 2.44297 4.65033 3.33464L3.95866 11.6346C3.84199 12.993 4.91699 14.1596 6.28365 14.1596L15.1587 14.1596C16.3587 14.1596 17.4087 13.1763 17.5003 11.9846L17.9503 5.73464C18.0503 4.35131 17.0003 3.2263 15.6087 3.2263L4.85033 3.2263" fill-rule="nonzero" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" />
+			<path id="Vector" d="M13.5417 18.3333C12.9664 18.3333 12.5 17.867 12.5 17.2917C12.5 16.7164 12.9664 16.25 13.5417 16.25C14.117 16.25 14.5833 16.7164 14.5833 17.2917C14.5833 17.867 14.117 18.3333 13.5417 18.3333Z" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" />
+			<path id="Vector" d="M6.87467 18.3333C6.29938 18.3333 5.83301 17.867 5.83301 17.2917C5.83301 16.7164 6.29938 16.25 6.87467 16.25C7.44997 16.25 7.91634 16.7164 7.91634 17.2917C7.91634 17.867 7.44997 18.3333 6.87467 18.3333Z" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" />
+			<path id="Line" d="M7.5 6.66797L17.5 6.66797" stroke="rgb(255,255,255)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.500000" />
+			<path id="Vector" opacity="0" />
+		</g>
+	</g>
+</svg>
