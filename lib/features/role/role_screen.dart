@@ -94,6 +94,7 @@ class _RoleScreenState extends State<RoleScreen> {
                           .copyWith(fontSize: 15),
                       recognizer: TapGestureRecognizer()
                         ..onTap = () {
+                          
                           NavigationService.navigateTo(Routes.signinRoute);
                         },
                     ),
