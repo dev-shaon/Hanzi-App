@@ -31,7 +31,6 @@ class OnboardingContent extends StatelessWidget {
           title,
           style: TextFontStyle.headline28w700c202020urbanist,
         ),
-
         UIHelper.verticalSpace(18.h),
 
         Text(
